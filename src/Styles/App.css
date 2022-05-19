@@ -1,14 +1,57 @@
-/* @font-face {
-  font-family: "FOT-Rodin Pro UB";
-  src: url("/public/fonts/FOT-Rodin\ Pro\ UB.otf") format("truetype");
-} */
-
 @font-face {
   font-family: "NTR";
   src: url("/public/fonts/NTR-Regular.ttf") format("truetype");
 }
 
-.App {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
-  /* font-family: FOT-Rodin Pro UB, serif; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+nav img {
+  width: 40px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-family: 'NTR', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #72695A;
+}
+
+nav a:first-child {
+  margin-right: auto;
+  width: 40px;
+}
+
+nav a:hover {
+  color: #beb097;
+  transition: 2s;
+}
+
+.home {
+  margin-top: 40px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 14px;
+  opacity: 50%;
 }

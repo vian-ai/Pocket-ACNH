@@ -28,7 +28,6 @@ function Browse(props) {
                     setErrorMessage('');
                     setVillager(null);
                 } else {
-                    console.log(data);
                     setVillager(data);
                     setErrorMessage('');
                 }

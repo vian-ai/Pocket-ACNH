@@ -14,6 +14,14 @@ function App() {
     setStarredList([...starredList, villagerName]);
   };
 
+  const removeFromStarredList = (villagerToRemove) => {
+    let newStarredItem = starredList.filter((villager, index) => {
+      return index !== villagerToRemove;
+    });
+
+    setStarredList(newStarredItem);
+  }
+
   return (
     <div className="App">
       <nav className="menu">
@@ -26,7 +34,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/browse' element={<Browse addToStarredList={addToStarredList}/>} />
-          <Route path='/collection' element={<Collection starred={starredList}/>} />
+          <Route path='/collection' element={<Collection removeFromStarredList={removeFromStarredList} starred={starredList}/>} />
         </Routes>
       </main>
       <Footer />

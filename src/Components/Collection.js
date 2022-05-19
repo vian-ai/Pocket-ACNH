@@ -5,6 +5,7 @@ function Collection (props) {
         return (
             <div>
                 <p>Placeholder: {villager[0].name}</p>
+                <button onClick={() => props.removeFromStarredList(index)}>Remove</button>
             </div>
         )
     });

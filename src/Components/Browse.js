@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const key = '6e4ba353-a4fa-4797-8d15-78371d6c282b';
 
-function Browse() {
+function Browse(props) {
 
     const [searchVillager, setSearchVillager] = useState([]);
     const [villager, setVillager] = useState(null);
@@ -40,15 +40,13 @@ function Browse() {
     if (villager !== null) {
         displayVillager = (
             <div>
-                <h4>Villager Name: {villager[0].name}</h4>
-                <h4>Gender: {villager[0].gender}</h4>
-                <h4>Species: {villager[0].species}</h4>
-                <h4>Personality: {villager[0].personality}</h4>
-                <h4>Zodiac Sign: {villager[0].sign}</h4>
-                <h4>Birthday: {villager[0].birthday_month} {villager[0].birthday_day}</h4>
-                <h4>Phrase: {villager[0].phrase}</h4>
-                <h4>Quote: {villager[0].quote}</h4>
-                <img src={villager[0].image_url} alt={villager[0].name} width="100"/>
+                <p>Villager: {villager[0].name}</p>
+                <p>Personality: {villager[0].personality}</p>
+                <p>Birthday: {villager[0].birthday_month}/{villager[0].birthday_day}</p>
+                <p>Zodiac Sign: {villager[0].sign}</p>
+                <p>Quote: {villager[0].quote}</p>
+                <img src={villager[0].image_url} alt={villager[0].name} width="100" />
+                <button onClick={() => props.addToStarredList(villager)}>Add to Favorite</button>
             </div>
         )
     }

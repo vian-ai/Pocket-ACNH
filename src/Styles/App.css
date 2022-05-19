@@ -1,0 +1,14 @@
+/* @font-face {
+  font-family: "FOT-Rodin Pro UB";
+  src: url("/public/fonts/FOT-Rodin\ Pro\ UB.otf") format("truetype");
+} */
+
+@font-face {
+  font-family: "NTR";
+  src: url("/public/fonts/NTR-Regular.ttf") format("truetype");
+}
+
+.App {
+  text-align: center;
+  /* font-family: FOT-Rodin Pro UB, serif; */
+}

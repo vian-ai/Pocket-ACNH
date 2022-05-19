@@ -24,8 +24,8 @@ function Browse() {
             .then((data) => {
                 setSearchVillager('');
 
-                if (data.Error) {
-                    setErrorMessage(data.Error);
+                if (data.error) {
+                    setErrorMessage('');
                     setVillager(null);
                 } else {
                     console.log(data);
@@ -34,13 +34,6 @@ function Browse() {
                 }
             })
             .catch(() => setErrorMessage('Not found.'));
-            // .then(res => res.json())
-            // .then(data => console.log(data))
-            // .then(data => {
-            //     setSearchVillager('')
-            //     setVillager(data)
-            // })
-            // .catch(() => console.log('error'))
     }
 
     let displayVillager = '';
@@ -55,13 +48,13 @@ function Browse() {
                 <h4>Birthday: {villager[0].birthday_month} {villager[0].birthday_day}</h4>
                 <h4>Phrase: {villager[0].phrase}</h4>
                 <h4>Quote: {villager[0].quote}</h4>
-                <img src={villager[0].image_url} alt={villager[0].name}/>
+                <img src={villager[0].image_url} alt={villager[0].name} width="100"/>
             </div>
         )
     }
 
     return (
-        <div className="App">
+        <div>
             <h1>AC Library</h1>
             <form onSubmit={handleSubmit}>
                 <input onChange={updateSearchTerm} value={searchVillager} type="text" placeholder="Search for villagers!" />

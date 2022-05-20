@@ -37,6 +37,7 @@ function App() {
           <Route path='/collection' element={<Collection removeFromStarredList={removeFromStarredList} starred={starredList} />} />
         </Routes>
       </main>
+      {/* <ImageCarousel /> */}
       <Footer />
     </div>
   );

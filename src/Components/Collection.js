@@ -13,7 +13,7 @@ function Collection (props) {
 
     return (
         <div>
-            <h1>AC Collection</h1>
+            <h1 className="title">AC Collection</h1>
             <div style={{ display: 'flex' }}>{collectedItems}</div>
         </div>
     )

@@ -69,8 +69,8 @@ function Browse(props) {
     return (
         <div>
             <div className="searchEngine">
-                <h1>AC Library</h1>
-                <form onSubmit={handleSubmit}>
+                <h1 className="title">AC Library</h1>
+                <form className="searchBar" onSubmit={handleSubmit}>
                     <input onChange={updateSearchTerm} value={searchVillager} type="text" placeholder="Search for villagers!" />
                     <input type="submit" value="Search" />
                 </form>

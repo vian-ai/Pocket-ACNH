@@ -43,6 +43,16 @@ nav a:hover {
 
 .home {
   margin-top: 40px;
+  font-family: Calibre, serif;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.para {
+  font-size: 20px;
+  opacity: 80%;
 }
 
 .footer {
@@ -56,6 +66,10 @@ nav a:hover {
 
 .searchEngine {
   padding-bottom: 40px;
+}
+
+.searchBar {
+  padding-top: 10px;
 }
 
 .card {
@@ -76,7 +90,7 @@ nav a:hover {
 }
 
 .favBtn {
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .carousel.slide {

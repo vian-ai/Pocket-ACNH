@@ -72,21 +72,22 @@ nav a:hover {
   padding-top: 10px;
 }
 
+.villagerName {
+  font-size: 30px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 250px;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: 'NTR', serif;
 }
 
 .card img {
   padding: 5px;
   margin: 15px;
-}
-
-.villagerName {
-  font-size: 22px;
 }
 
 .favBtn {

@@ -19,4 +19,8 @@
         font-size: 12px;
         opacity: 50%;
     }
+
+    .carousel {
+        display: none;
+    }
 }

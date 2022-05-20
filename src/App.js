@@ -33,8 +33,8 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/browse' element={<Browse addToStarredList={addToStarredList}/>} />
-          <Route path='/collection' element={<Collection removeFromStarredList={removeFromStarredList} starred={starredList}/>} />
+          <Route path='/browse' element={<Browse addToStarredList={addToStarredList} />} />
+          <Route path='/collection' element={<Collection removeFromStarredList={removeFromStarredList} starred={starredList} />} />
         </Routes>
       </main>
       <Footer />

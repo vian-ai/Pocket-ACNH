@@ -4,7 +4,8 @@ function Collection (props) {
     const collectedItems = props.starred.map((villager, index) => {
         return (
             <div>
-                <p>Placeholder: {villager[0].name}</p>
+                <img src={villager[0].image_url} alt={villager[0].name} width="100"/>
+                <p>Villager: {villager[0].name}</p>
                 <button onClick={() => props.removeFromStarredList(index)}>Remove</button>
             </div>
         )

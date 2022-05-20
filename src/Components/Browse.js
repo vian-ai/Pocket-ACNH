@@ -38,25 +38,28 @@ function Browse(props) {
     let displayVillager = '';
     if (villager !== null) {
         displayVillager = (
-            <div>
-                <p>Villager: {villager[0].name}</p>
-                <p>Personality: {villager[0].personality}</p>
-                <p>Birthday: {villager[0].birthday_month}/{villager[0].birthday_day}</p>
-                <p>Zodiac Sign: {villager[0].sign}</p>
-                <p>Quote: {villager[0].quote}</p>
-                <img src={villager[0].image_url} alt={villager[0].name} width="100" />
-                <button onClick={() => props.addToStarredList(villager)}>Add to Favorite</button>
+            <div className="card">
+                <div className="container">
+                    <img src={villager[0].image_url} alt={villager[0].name} width="100" />
+                    <p className="villagerName">{villager[0].name}</p>
+                    <p>Personality: {villager[0].personality}</p>
+                    <p>Birthday: {villager[0].birthday_month} {villager[0].birthday_day}</p>
+                    <p>Zodiac Sign: {villager[0].sign}</p>
+                </div>
+                <button className="favBtn" type="button" onClick={() => props.addToStarredList(villager)}>Add to Favorite</button>
             </div>
         )
     }
 
     return (
         <div>
-            <h1>AC Library</h1>
-            <form onSubmit={handleSubmit}>
-                <input onChange={updateSearchTerm} value={searchVillager} type="text" placeholder="Search for villagers!" />
-                <input type="submit" value="Search" />
-            </form>
+            <div className="searchEngine">
+                <h1>AC Library</h1>
+                <form onSubmit={handleSubmit}>
+                    <input onChange={updateSearchTerm} value={searchVillager} type="text" placeholder="Search for villagers!" />
+                    <input type="submit" value="Search" />
+                </form>
+            </div>
             <div>
                 {displayVillager}
             </div>

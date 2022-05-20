@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import CakeIcon from '@mui/icons-material/Cake';
+import StarIcon from '@mui/icons-material/Star';
 
 const key = '6e4ba353-a4fa-4797-8d15-78371d6c282b';
 
@@ -57,9 +60,9 @@ function Browse(props) {
                 <div className="container">
                     <img src={villager[0].image_url} alt={villager[0].name} width="100" />
                     <p className="villagerName">{villager[0].name}</p>
-                    <p>Personality: {villager[0].personality}</p>
-                    <p>Birthday: {villager[0].birthday_month} {ordinal_suffix(villager[0].birthday_day)}</p>
-                    <p>Zodiac Sign: {villager[0].sign}</p>
+                    <p><EmojiEmotionsIcon sx={{ fontSize: 20 }} /> Personality: {villager[0].personality}</p>
+                    <p><CakeIcon sx={{ fontSize: 20 }} /> Birthday: {villager[0].birthday_month} {ordinal_suffix(villager[0].birthday_day)}</p>
+                    <p><StarIcon sx={{ fontSize: 20 }} /> Zodiac Sign: {villager[0].sign}</p>
                 </div>
                 <button className="favBtn" type="button" onClick={() => props.addToStarredList(villager)}>Add to Favorite</button>
             </div>

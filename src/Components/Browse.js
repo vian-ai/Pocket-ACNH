@@ -35,6 +35,21 @@ function Browse(props) {
             .catch(() => setErrorMessage('Not found.'));
     }
 
+    const ordinal_suffix = (i) => {
+        let j = i % 10,
+            k = i % 100;
+        if (j == 1 && k != 11) {
+            return i + "st";
+        }
+        if (j == 2 && k != 12) {
+            return i + "nd";
+        }
+        if (j == 3 && k != 13) {
+            return i + "rd";
+        }
+        return i + "th";
+    }
+
     let displayVillager = '';
     if (villager !== null) {
         displayVillager = (
@@ -43,7 +58,7 @@ function Browse(props) {
                     <img src={villager[0].image_url} alt={villager[0].name} width="100" />
                     <p className="villagerName">{villager[0].name}</p>
                     <p>Personality: {villager[0].personality}</p>
-                    <p>Birthday: {villager[0].birthday_month} {villager[0].birthday_day}</p>
+                    <p>Birthday: {villager[0].birthday_month} {ordinal_suffix(villager[0].birthday_day)}</p>
                     <p>Zodiac Sign: {villager[0].sign}</p>
                 </div>
                 <button className="favBtn" type="button" onClick={() => props.addToStarredList(villager)}>Add to Favorite</button>

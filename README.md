@@ -1,5 +1,5 @@
 # Pocket ACNH
-An Animal Crossing New Horizons search engine built id React.js designed to search for villagers and view simple facts about them.
+An Animal Crossing New Horizons search engine built in React.js designed to search for villagers and view simple facts about them.
 
 ## Get Started
 1. Install dependencies

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Pocket-ACNH/static/css/main.be7d8888.css",
+    "main.js": "/Pocket-ACNH/static/js/main.1e29f7f4.js",
+    "static/media/NTR-Regular.ttf": "/Pocket-ACNH/static/media/NTR-Regular.96839eb7b68e4482d73d.ttf",
+    "static/media/NH_Genji.png": "/Pocket-ACNH/static/media/NH_Genji.f470e2cf51fce2b82a11.png",
+    "static/media/NH_Beau.png": "/Pocket-ACNH/static/media/NH_Beau.4cd234861661de5fa80b.png",
+    "static/media/NH_Blaire.png": "/Pocket-ACNH/static/media/NH_Blaire.df81068c6a5aa66c53b0.png",
+    "static/media/NH_Freckles.png": "/Pocket-ACNH/static/media/NH_Freckles.3f11e275309895870bd4.png",
+    "index.html": "/Pocket-ACNH/index.html",
+    "main.be7d8888.css.map": "/Pocket-ACNH/static/css/main.be7d8888.css.map",
+    "main.1e29f7f4.js.map": "/Pocket-ACNH/static/js/main.1e29f7f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be7d8888.css",
+    "static/js/main.1e29f7f4.js"
+  ]
+}
